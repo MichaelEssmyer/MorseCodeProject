@@ -88,8 +88,8 @@ public:
 		Item_Type the_data;
 		std::istringstream ins(next_line);
 		ins >> the_data;
-		Binary_Tree<Item_Type> left = read_tree(in);
-		Binary_Tree<Item_Type> right = read_tree(in);
+		if(the_data->left != NULL) Binary_Tree<Item_Type> left = read_tree(in);
+		else if(the_data->right != NULL) Binary_Tree<Item_Type> right = read_tree(in);
 		return Binary_Tree<Item_Type>(the_data, left, right);}
 	}
 
