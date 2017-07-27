@@ -9,6 +9,7 @@ struct BTNode //each node
 {
 	// Data Fields
 	Item_Type data; //char letter/number
+	int selected;
 	BTNode<Item_Type>* left; //Dots
 	BTNode<Item_Type>* right; //Dash
 
@@ -16,7 +17,8 @@ struct BTNode //each node
 	BTNode(const Item_Type& the_data, //const char 
 		BTNode<Item_Type>* left_val = NULL, //dot
 		BTNode<Item_Type>* right_val = NULL) : //dash
-		data(the_data), left(left_val), right(right_val) {} //BTNode(data): dot, dash
+		data(the_data), left(left_val), right(right_val) {int selected = 0; //a value of 0 means that it was not selected. THe int value is its value in the output string
+		} //BTNode(data): dot, dash
 
 	// Destructor (to avoid warning message)
 	virtual ~BTNode() {} //destroys node
