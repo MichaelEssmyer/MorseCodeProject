@@ -128,7 +128,7 @@ private:
 		{
 			if (Dashes.find(*itr) != -1) current = current->right;
 			else if (Dots.find(*itr) != -1) current = current->left;
-			else if (itr == " ") 
+			else if (itr == " ") //if there is a space in the string 
 			{
 				if (current != treeCode.getRoot())
 				{
