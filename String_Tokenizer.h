@@ -5,7 +5,7 @@
 /** The string_tokenizer class splits a string into a sequence of subtrings,
 called tokens, separated by delimeters.
 */
-class string_tokenizer
+class string_tokenizer //used for encoding
 {
 public:
 	/** Construct a string_tokenizer
