@@ -20,10 +20,12 @@ public:
 		{
 			Insert(root->right, letter);
 		}
-		else if(root-> data <letter)
+		else if(root->data < letter)
 		{
 			Insert(root->left, letter);
 		}
+		else
+			memory = letter;
 	}
 
 	void treedelete(BTNode<char>* root)
@@ -32,9 +34,6 @@ public:
 		else if (root->left != NULL) { treedelete(root->left); }
 		else if (root->right != NULL) { treedelete(root->right); }
 	}
-private:
-	bool find(BTNode<char>* root, char letter) {}
-	void insert(BTNode<char>* root, char letter) {}
 
 	string valuesCode;
 	Binary_Tree <char> memory;
