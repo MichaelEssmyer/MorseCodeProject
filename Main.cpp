@@ -7,7 +7,7 @@ using namespace std;
 int main() {
 	string input;
 	int option;
-	bool run;
+	bool run = true;
 	Morse theMorseTree;
 	ifstream fin;
 	ofstream fout;
